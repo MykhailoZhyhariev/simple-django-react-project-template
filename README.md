@@ -3,6 +3,34 @@ Default Django+React.js project
 
 Project use SQlite3 database for development and PostgreSQL database in production.
 
+Setting the project
+-------------------
+
+1) Create the virtual environment
+
+`python3 -m venv ./venv` or `make env`
+
+2) Activate the virtual environment
+
+`source venv/bin/activate`
+
+3) Install all python dependencies
+
+`pip install -r requirements.txt` or `make pip`
+
+4) Install node modules
+
+`npm install`
+
+5) Apply DB migrate
+
+`python manage.py migrate` or `make migrate`
+
+6) Starting the project
+
+`npm start`
+
+
 Project tree
 ------------
 
