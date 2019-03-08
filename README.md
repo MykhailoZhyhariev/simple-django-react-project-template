@@ -1,4 +1,4 @@
-Default Django+React.js project
+Simple Django+React.js project template
 -----------------------------
 
 Project use SQlite3 database for development and PostgreSQL database in production.
