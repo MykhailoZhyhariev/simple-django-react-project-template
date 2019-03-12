@@ -22,11 +22,15 @@ Setting the project
 
 `npm install`
 
-5) Apply DB migrate
+5) Create environment variables:
+
+`cp example.env .env` or `make env`
+
+6) Apply DB migrate
 
 `python manage.py migrate` or `make migrate`
 
-6) Starting the project
+7) Starting the project
 
 `npm start`
 
