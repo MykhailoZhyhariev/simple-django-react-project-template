@@ -27,12 +27,26 @@ module.exports = {
             loader: 'babel-loader',
             options: {
               presets: [
-                "@babel/env",
+                ["@babel/preset-env", {
+                  modules: false
+                }],
                 "@babel/react"
               ]
             }
           }
         ]
+      }, {
+        test: /\.(png|jpg|gif|svg)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+        }
+      }, {
+        test: /\.(woff|woff2|eot|ttf)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+        }
       }]
   },
 

@@ -8,9 +8,7 @@
     <meta charset="utf-8">
     <title>Assembly drawing website</title>
 
-    {% if not debug %}
-    <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
-    {% endif %}
+    {% render_bundle 'main' 'css' %}
 
     {% block styles %}{% endblock %}
   </head>
@@ -23,11 +21,7 @@
 
     {% include 'partials/footer.html' %}
 
-    {% if debug %}
-      {% render_bundle 'main' %}
-    {% else %}
-      <script src="{% static 'js/main.min.js' %}"></script>
-    {% endif %}
+    {% render_bundle 'main' 'js' %}
 
     {% block scripts %}{% endblock %}
   </body>

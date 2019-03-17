@@ -9,11 +9,11 @@ const config = require('./webpack.base.config.js');
 
 config.mode = 'production';
 
-config.output.filename = '[name].js';
+config.output.filename = '[name]-[hash].min.js';
 
 config.plugins = config.plugins.concat([
   new MiniCssExtractPlugin({
-    filename: '../css/style.css'
+    filename: '../css/style-[hash].min.css'
   }),
 
   // removes a lot of debugging code in React
@@ -23,7 +23,15 @@ config.plugins = config.plugins.concat([
   }}),
 
   new webpack.optimize.OccurrenceOrderPlugin(),
+
+  new BundleTracker({filename: './webpack-stats-production.json'}),
 ])
+
+// Images
+config.module.rules[1].options.outputPath = '../img';
+
+// Fonts
+config.module.rules[2].options.outputPath = '../fonts';
 
 config.module.rules.push({
   test: /\.(sa|sc|c)ss$/,
