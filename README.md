@@ -8,7 +8,7 @@ Setting the project
 
 1) Create the virtual environment
 
-`python3 -m venv ./venv` or `make env`
+`python3 -m venv ./venv` or `make venv`
 
 2) Activate the virtual environment
 
