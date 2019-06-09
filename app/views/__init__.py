@@ -1,1 +1,1 @@
-from .index import IndexView
+from .index import IndexView # noqa

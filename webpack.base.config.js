@@ -33,7 +33,8 @@ module.exports = {
                 "@babel/react"
               ]
             }
-          }
+          },
+          "eslint-loader"
         ]
       }, {
         test: /\.(png|jpg|gif|svg)$/,

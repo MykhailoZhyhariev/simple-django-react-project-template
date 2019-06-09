@@ -1,0 +1,28 @@
+[flake8]
+ignore =
+    # Ignore "Missing docstring in public module"
+    D100,
+    # Ignore "Missing docstring in public class"
+    D101,
+    # Ignore "Missing docstring in public method"
+    D102,
+    # Ignore "Missing docstring in public function"
+    D103,
+    # Ignore "Missing docstring in public package"
+    D104,
+    # Ignore "Missing docstring in magic method"
+    D105,
+    # Ignore "Missing docstring in public nested class"
+    D106,
+    # Ignore "Missing docstring in __init__"
+    D107
+
+
+exclude =
+    .git,
+    __pycache__,
+    app/migrations
+
+import-order-style = google
+
+inline-quotes = '

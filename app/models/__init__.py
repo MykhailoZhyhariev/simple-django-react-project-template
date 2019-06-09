@@ -1,1 +1,1 @@
-from .example import ExampleModel
+from .example import ExampleModel # noqa

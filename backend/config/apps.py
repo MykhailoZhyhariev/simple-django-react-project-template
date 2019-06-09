@@ -1,3 +1,10 @@
+import os
+
+import raven
+
+from .settings import env
+
+
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -9,6 +16,7 @@ INSTALLED_APPS = [
     'webpack_loader',
     'app'
 ]
+
 
 if not env('SENTRY'):
     INSTALLED_APPS.append('raven.contrib.django.raven_compat')

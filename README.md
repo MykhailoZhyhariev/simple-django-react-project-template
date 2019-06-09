@@ -187,3 +187,21 @@ DB_PORT=5432
 SENTRY=false
 SENTRY_DSN=dsn_of_your_cool_project
 ```
+
+
+Flake 8 setup up
+----------------
+
+To install Flake 8 pre-commit hook:
+
+1) Install Flake 8 pre-commit hook;
+
+```
+flake8 --install-hook git
+```
+
+2) Setup up hook;
+
+```
+git config --bool flake8.strict true
+```
