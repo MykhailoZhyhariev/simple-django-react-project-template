@@ -4,9 +4,9 @@
   "description": "Simple Django+React.js project template",
   "main": "main.js",
   "scripts": {
-    "build": "./node_modules/gulp/bin/gulp.js",
-    "server": "./node_modules/gulp/bin/gulp.js python",
-    "start": "./node_modules/gulp/bin/gulp.js serve"
+    "build": "node_modules/gulp/bin/gulp.js",
+    "server": "node_modules/gulp/bin/gulp.js python",
+    "start": "node_modules/gulp/bin/gulp.js serve"
   },
   "repository": {
     "type": "git",
