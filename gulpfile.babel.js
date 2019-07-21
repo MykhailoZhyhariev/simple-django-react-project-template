@@ -62,7 +62,7 @@ gulp.task('webpack:development-build', run('node server.js'));
 gulp.task('webpack:production-build', run('./node_modules/.bin/webpack --config webpack.prod.config.js'));
 
 // Task for running application
-gulp.task('python', run('python3 manage.py runserver'))
+gulp.task('python', run('python manage.py runserver'))
 
 // Serve static files and python server
 gulp.task('serve', gulp.parallel('python', 'watch', 'webpack:development-build'));
